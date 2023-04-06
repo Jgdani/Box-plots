@@ -1,0 +1,233 @@
+####### box plots #######
+dat<-read.csv("C:/Users/Julia/Documents/analises_sisyrinchium/vaginatum.csv" , sep=",", dec=",")
+data<- dat[,c(2:14)] 
+rownames(data) <- dat$Species[1:291] 
+
+head(data) # abrir conjunto de dados
+
+boxplot(n.flor.ripidio~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Number of flowers per ripidio",
+        ylab="Number of flowers",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.pedunc~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Peduncle length",
+        ylab="Peduncle length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.pedic~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Pedicel length",
+        ylab="Pedicel length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.valv.intern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="internal valve length",
+        ylab="internal valve length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.valv.extern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="External valve length",
+        ylab="External valve length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.folha~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Leaf length",
+        ylab="Leaf length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.bainha~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Leaf sheath length",
+        ylab="Leaf sheath length",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(larg.valv.intern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Width of internal valves",
+        ylab="width of internal valves",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(larg.valv.extern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Width of external valves",
+        ylab="width of external valves",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(larg.folha~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Leaf width",
+        ylab="Leaf width",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(comp.caule~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Stem width",
+        ylab="Stem width",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(med.valv.unid~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Measure of the valves together",
+        ylab="Measure of the valves together",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+boxplot(dist.internos~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Distance from the internodes",
+        ylab="Distance from the internodes",
+        col= c("#359900","#D60D00","#10A2A6","#1C4042","#DFA327", "#9B003C"),
+        border="black")
+
+###################### grupo palmifolium #################
+data<-read.csv("C:/Users/Julia/Documents/analises_sisyrinchium/palmifolium.csv" , sep=",", dec=",")
+
+boxplot(n.de.ramif.sinfl~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Number of branches of synflorescence",
+        ylab="Number of branches of synflorescence",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.internos~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Distance from the internodes",
+        ylab="Distance from the internodes",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(n.de.rip~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Number of ripidios",
+        ylab="Number of ripidios",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(n.flor.p.rip~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Number of flowers per ripidio",
+        ylab="Number of flowers per ripidio",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.pedunc~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Peduncle length",
+        ylab="Peduncle length",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.valv.intern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Length of internal valves",
+        ylab="Length of internal valves",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.valv.extern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Length of extern valves",
+        ylab="Length of extern valves",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(larg.valv.intern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Width of internal valves",
+        ylab="Width of internal valves",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(Larg.valv.extern~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Width of extern valves",
+        ylab="Width of extern valves",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(med.valv.unid~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Measure of the valves together",
+        ylab="Measure of the valves together",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(larg.folha~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Leaf width",
+        ylab="Leaf width",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.folha~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Leaf length",
+        ylab="Leaf length",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(n.nervuras~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Number of leaf veins",
+        ylab="Number of leaf veins",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(larg.escapo~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Peduncle width",
+        ylab="Peduncle width",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
+
+boxplot(comp.escapo~Especie,
+        data=data,
+        main="Different boxplots for each Specie",
+        xlab="Peduncle length",
+        ylab="Peduncle length",
+        col=c("#BF064E","#21570E","#10A2A6","#940E0E","#DFA327", "#C9E265", "#F172A4", "#370062"),
+        border="black")
